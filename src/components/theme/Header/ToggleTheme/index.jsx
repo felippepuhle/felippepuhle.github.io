@@ -1,7 +1,5 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
-import sunIcon from 'assets/icons/sun.svg';
-import moonIcon from 'assets/icons/moon.svg';
 import { Wrapper } from './styles';
 
 const ToggleTheme = () => {
@@ -9,7 +7,7 @@ const ToggleTheme = () => {
 
   return (
     <Wrapper type="button" onClick={toggleTheme}>
-      <img src={theme === 'light' ? moonIcon : sunIcon} alt={theme} />
+      <img src={theme === 'light' ? '/icons/moon.svg' : '/icons/sun.svg'} alt={theme} />
     </Wrapper>
   );
 };
