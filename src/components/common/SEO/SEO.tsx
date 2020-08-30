@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import Thumbnail from 'assets/thumbnail/thumbnail.png'
+import Thumbnail from './assets/thumbnail.png'
 
 import {
   url,
