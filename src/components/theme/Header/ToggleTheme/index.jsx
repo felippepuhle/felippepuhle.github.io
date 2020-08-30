@@ -1,15 +1,18 @@
-import React, { useContext } from 'react';
-import { ThemeContext } from 'providers/ThemeProvider';
-import { Wrapper } from './styles';
+import React, { useContext } from 'react'
+import { ThemeContext } from 'providers/ThemeProvider'
+import { Wrapper } from './styles'
 
 const ToggleTheme = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { isDarkMode, toggleDarkMode } = useContext(ThemeContext)
 
   return (
-    <Wrapper type="button" onClick={toggleTheme}>
-      <img src={theme === 'light' ? '/icons/moon.svg' : '/icons/sun.svg'} alt={theme} />
+    <Wrapper type='button' onClick={toggleDarkMode}>
+      <img
+        src={isDarkMode ? '/icons/sun.svg' : '/icons/moon.svg'}
+        alt='Toggle dark mode'
+      />
     </Wrapper>
-  );
-};
+  )
+}
 
-export default ToggleTheme;
+export default ToggleTheme

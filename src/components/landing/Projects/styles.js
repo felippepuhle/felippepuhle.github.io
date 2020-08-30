@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
-`;
+`
 
 export const Grid = styled.div`
   display: grid;
@@ -18,7 +18,7 @@ export const Grid = styled.div`
   @media (max-width: 680px) {
     grid-template-columns: 1fr;
   }
-`;
+`
 
 export const Item = styled.div`
   width: 100%;
@@ -27,17 +27,17 @@ export const Item = styled.div`
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
 
   h4 {
-    color: ${({ theme }) => (theme === 'light' ? '#212121' : '#fff')};
+    color: ${({ theme }) => (theme.isDarkMode ? '#fff' : '#212121')};
   }
 
   p {
-    color: ${({ theme }) => (theme === 'light' ? '#707070' : '#c7c7c7')};
+    color: ${({ theme }) => (theme.isDarkMode ? '#c7c7c7' : '#707070')};
   }
-`;
+`
 
 export const Content = styled.div`
   padding: 1rem 0;
-`;
+`
 
 export const Stats = styled.div`
   display: flex;
@@ -54,12 +54,12 @@ export const Stats = styled.div`
     }
 
     svg path {
-      fill: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+      fill: ${({ theme }) => (theme.isDarkMode ? '#fff' : '#000')};
     }
 
     span {
-      color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+      color: ${({ theme }) => (theme.isDarkMode ? '#fff' : '#000')};
       margin-left: 0.5rem;
     }
   }
-`;
+`

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Button = styled.button`
   cursor: pointer;
@@ -13,7 +13,7 @@ export const Button = styled.button`
   -ms-user-select: none;
   user-select: none;
   color: #fff;
-  background: #0074d9;
+  background: ${({ theme }) => theme.colors.main};
 
   &:focus {
     outline: none;
@@ -22,10 +22,4 @@ export const Button = styled.button`
   &:disabled {
     background: gray;
   }
-
-  ${({ secondary }) =>
-    secondary &&
-    `
-		background: #001F3F;
-	`}
-`;
+`
