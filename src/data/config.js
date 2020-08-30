@@ -4,13 +4,13 @@ module.exports = {
   author: 'Felippe Rodrigo Puhle',
   url: 'https://felippepuhle.github.io',
   legalName: 'Felippe Rodrigo Puhle',
-  defaultDescription: 'Software Engineer | React and React Native developer | GraphQL enthusiast',
+  defaultDescription:
+    'Software Engineer | React and React Native developer | GraphQL enthusiast',
   socialLinks: {
     twitter: 'http://www.twitter.com/felippepuhle',
     github: 'https://github.com/felippepuhle',
     linkedin: 'https://www.linkedin.com/in/felippepuhle',
   },
-  googleAnalyticsID: 'UA-88875900-4',
   themeColor: '#6b63ff',
   backgroundColor: '#6b63ff',
   social: {
@@ -23,7 +23,7 @@ module.exports = {
     zipCode: '89930-000',
   },
   contact: {
-    email: 'email',
-    phone: 'phone number',
+    email: 'felippe.puhle@gmail.com',
+    phone: '+5549988608580',
   },
-};
+}

@@ -1,8 +1,8 @@
-const config = require('./src/data/config');
+const config = require('./src/data/config')
 
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-});
+})
 
 module.exports = {
   siteMetadata: {
@@ -11,6 +11,7 @@ module.exports = {
     author: config.author,
   },
   plugins: [
+    'gatsby-plugin-typescript',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-transformer-sharp',
@@ -25,20 +26,6 @@ module.exports = {
           Authorization: `bearer ${process.env.GATSBY_PORTFOLIO_GITHUB_TOKEN}`,
         },
         fetchOptions: {},
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-nprogress',
-      options: {
-        color: config.themeColor,
-        showSpinner: false,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: config.googleAnalyticsID,
-        head: true,
       },
     },
     {
@@ -73,4 +60,4 @@ module.exports = {
     },
     'gatsby-plugin-offline',
   ],
-};
+}
