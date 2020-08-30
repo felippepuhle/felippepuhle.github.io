@@ -1,8 +1,8 @@
 module.exports = {
   defaultTitle: 'Felippe Rodrigo Puhle',
-  logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
+  logo: 'https://felippepuhle.github.io/favicon/favicon-512.png',
   author: 'Felippe Rodrigo Puhle',
-  url: 'https://portfolio.smakosh.com',
+  url: 'https://felippepuhle.github.io',
   legalName: 'Felippe Rodrigo Puhle',
   defaultDescription: 'Software Engineer | React and React Native developer | GraphQL enthusiast',
   socialLinks: {
