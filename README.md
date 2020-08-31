@@ -4,7 +4,7 @@
 
 ## Theme
 
-[Gatsby-theme-portfolio](https://github.com/smakosh/gatsby-theme-portfolio)
+[gatsby-portfolio-dev](https://github.com/smakosh/gatsby-portfolio-dev)
 
 ## License
 
