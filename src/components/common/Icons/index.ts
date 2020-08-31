@@ -1,2 +1,5 @@
 export { Fork } from './Fork'
+export { GitHub } from './GitHub'
+export { LinkedIn } from './LinkedIn'
 export { Star } from './Star'
+export { Twitter } from './Twitter'
