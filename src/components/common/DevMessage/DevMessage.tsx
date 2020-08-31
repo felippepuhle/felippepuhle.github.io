@@ -12,7 +12,12 @@ const Wrapper = styled.div`
   justify-content: space-between;
 
   @media (max-width: 960px) {
+    padding: 3rem 0;
     flex-direction: column;
+  }
+
+  @media (max-width: 601px) {
+    padding: 2rem 0;
   }
 `
 
