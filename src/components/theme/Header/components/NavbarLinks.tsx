@@ -7,7 +7,13 @@ import { ToggleDarkMode } from './ToggleDarkMode'
 const Wrapper = styled.div<{ desktop?: boolean }>`
   a {
     color: #000;
+    font-size: 1.1rem;
     text-decoration: none;
+    transition: 0.2s opacity;
+
+    :hover {
+      opacity: 0.8;
+    }
 
     @media (max-width: 960px) {
       color: ${({ theme }) => (theme.isDarkMode ? '#fff' : '#000')};
@@ -17,34 +23,35 @@ const Wrapper = styled.div<{ desktop?: boolean }>`
   ${({ desktop }) =>
     desktop
       ? `
-			align-items: center;
-			display: flex;
+      align-items: center;
+      display: flex;
 
-			@media (max-width: 960px) {
-					display: none;
-			}
+      @media (max-width: 960px) {
+        display: none;
+      }
 
-			a {
-					margin-right: 1rem;
+      a {
+        margin-right: 1.5rem;
 
-					&:last-child {
-							margin-right: unset;
-					}
-			}
-		`
+        &:last-child {
+          margin-right: unset;
+        }
+      }
+    `
       : `
-			padding: 3rem;
-			display: flex;
-			flex-direction: column;
+      padding: 4rem 3rem;
+      display: flex;
+      flex-direction: column;
 
-			a {
-					margin-bottom: 1rem;
+      a {
+        margin-top: .75rem;
+        margin-bottom: .75rem;
 
-					&:last-child {
-							margin-bottom: unset;
-					}
-			}
-	`}
+        &:last-of-type {
+		  margin-bottom: 1.5rem;
+        }
+      }
+  `}
 `
 
 type Props = {
