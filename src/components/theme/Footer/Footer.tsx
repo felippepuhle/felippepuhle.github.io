@@ -28,18 +28,26 @@ const SOCIAL = [
 ]
 
 const Wrapper = styled.div`
-  padding: 14rem 0 4rem 0;
+  padding: 20rem 0 4rem 0;
   background-image: url(${footerIllustration});
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
 
+  @media (max-width: 1960px) {
+    padding-top: 16rem;
+  }
+
+  @media (max-width: 1400px) {
+    padding-top: 14rem;
+  }
+
   @media (max-width: 960px) {
     padding-top: 10rem;
   }
 
-  @media (max-width: 601px) {
-    padding-top: 8rem;
+  @media (max-width: 680px) {
+    padding-top: 14rem;
   }
 `
 
@@ -91,7 +99,6 @@ export const Footer = () => (
   <Wrapper>
     <Flex as={Container}>
       <Details>
-        <h2>Felippe Rodrigo Puhle</h2>
         <span>
           © All rights are reserved | {new Date().getFullYear()} | Made with{' '}
           <span aria-label='love' role='img'>

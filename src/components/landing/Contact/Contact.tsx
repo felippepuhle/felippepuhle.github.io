@@ -17,6 +17,11 @@ const Wrapper = styled.div`
   @media (max-width: 960px) {
     flex-direction: column;
   }
+
+  @media (max-width: 680px) {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
 `
 
 const Details = styled.div`
