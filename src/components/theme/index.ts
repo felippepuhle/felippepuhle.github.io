@@ -1,3 +1,2 @@
 export { Footer } from './Footer/Footer'
-
-export * from './Header'
+export { Header } from './Header/Header'

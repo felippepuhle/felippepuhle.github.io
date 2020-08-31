@@ -1,6 +1,10 @@
+import React from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import styled from 'styled-components'
 
-export const Wrapper = styled.div`
+import { ToggleDarkMode } from './ToggleDarkMode'
+
+const Wrapper = styled.div<{ desktop?: boolean }>`
   a {
     color: #000;
     text-decoration: none;
@@ -42,3 +46,16 @@ export const Wrapper = styled.div`
 			}
 	`}
 `
+
+type Props = {
+  desktop?: boolean
+}
+
+export const NavbarLinks: React.FC<Props> = ({ desktop }) => (
+  <Wrapper desktop={desktop}>
+    <AnchorLink href='#about'>About</AnchorLink>
+    <AnchorLink href='#projects'>Projects</AnchorLink>
+    <AnchorLink href='#contact'>Contact</AnchorLink>
+    <ToggleDarkMode />
+  </Wrapper>
+)

@@ -1,6 +1,7 @@
+import React from 'react'
 import styled from 'styled-components'
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div<{ sidebar: boolean }>`
   z-index: 5;
   top: 1.6rem;
   right: 1.8rem;
@@ -30,7 +31,12 @@ export const Wrapper = styled.div`
 	`}
 `
 
-export const Bar = styled.div`
+const Bar = styled.div<{
+  sidebar: boolean
+  top?: boolean
+  mid?: boolean
+  bottom?: boolean
+}>`
   width: 1.6rem;
   height: 0.15rem;
   margin-bottom: 0.3rem;
@@ -42,7 +48,7 @@ export const Bar = styled.div`
     width: 1.6rem;
   }
 
-  ${({ top, sidebar, theme }) =>
+  ${({ theme, top, sidebar }) =>
     top &&
     sidebar &&
     `
@@ -51,14 +57,14 @@ export const Bar = styled.div`
 		
 	`}
 
-  ${({ mid, sidebar }) =>
+  ${({ theme, mid, sidebar }) =>
     mid &&
     sidebar &&
     `
 		transform: scale(0);
 		`}
 
-	${({ bottom, sidebar, theme }) =>
+	${({ theme, bottom, sidebar }) =>
     bottom &&
     sidebar &&
     `
@@ -66,3 +72,16 @@ export const Bar = styled.div`
 			transform: translateY(-6px) rotate(-45deg);
 	`}
 `
+
+type Props = {
+  sidebar: boolean
+  toggle: () => void
+}
+
+export const Hamburger: React.FC<Props> = ({ sidebar, toggle }) => (
+  <Wrapper sidebar={sidebar} onClick={toggle}>
+    <Bar top sidebar={sidebar} />
+    <Bar mid sidebar={sidebar} />
+    <Bar bottom sidebar={sidebar} />
+  </Wrapper>
+)
