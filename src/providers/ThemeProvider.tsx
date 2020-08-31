@@ -17,6 +17,7 @@ export default ({ children }) => {
       isDarkMode: darkMode.value,
       colors: {
         main: themeColor,
+        error: '#ff4136',
       },
     }),
     [darkMode.value]

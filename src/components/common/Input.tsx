@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Input = styled.input<{ error?: boolean }>`
   width: 100%;
   box-sizing: border-box;
-  border: 2px solid #6c63ff;
+  border: 2px solid ${({ theme }) => theme.colors.main};
   padding: 0.8rem 1rem;
   border-radius: 7px;
   margin-bottom: 0.5rem;
@@ -12,7 +12,7 @@ export const Input = styled.input<{ error?: boolean }>`
   ${({ error }) =>
     error &&
     `
-		border-color: #ff4136;
+		border-color: ${({ theme }) => theme.colors.error};
 	`}
 
   &::placeholder {

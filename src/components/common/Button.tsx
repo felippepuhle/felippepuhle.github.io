@@ -14,6 +14,11 @@ export const Button = styled.button`
   user-select: none;
   color: #fff;
   background: ${({ theme }) => theme.colors.main};
+  transition: 0.2s opacity;
+
+  &:hover {
+    opacity: 0.9;
+  }
 
   &:focus {
     outline: none;

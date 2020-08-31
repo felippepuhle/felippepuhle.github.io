@@ -5,6 +5,7 @@ declare module 'styled-components' {
     isDarkMode: boolean
     colors: {
       main: string
+      error: string
     }
   }
 }

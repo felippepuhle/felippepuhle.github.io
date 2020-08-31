@@ -70,7 +70,7 @@ const Links = styled.div`
   a {
     margin: 0 0.5rem;
     color: ${({ theme }) => theme.colors.main};
-    transition: 0.3s opacity;
+    transition: 0.2s opacity;
 
     :hover {
       opacity: 0.9;
