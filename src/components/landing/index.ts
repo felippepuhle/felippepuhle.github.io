@@ -1,5 +1,5 @@
 export * from './Contact'
-export * from './Projects'
-export * from './Skills'
 
+export { About } from './About/About'
 export { Intro } from './Intro'
+export { Projects } from './Projects'
