@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import { Container, Button } from 'components/common'
 import { LeftOverlay } from 'components/common/Overlays'
+import { defaultTitle, defaultDescription } from 'data/config'
 
 import skills from './assets/skills.svg'
 
@@ -70,7 +71,7 @@ export const About = () => (
   <LeftOverlay id='about'>
     <Inner as={Container}>
       <Thumbnail>
-        <img src={skills} alt='I’m John and I’m a Backend & Devops engineer!' />
+        <img src={skills} alt={`${defaultTitle} - ${defaultDescription}`} />
       </Thumbnail>
       <Details>
         <h2>More about me</h2>
