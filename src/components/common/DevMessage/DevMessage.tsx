@@ -1,15 +1,11 @@
+import React from 'react'
 import styled from 'styled-components'
-import overlayIllustration from 'assets/illustrations/overlay.svg'
 
-export const Wrapper = styled.div`
-  padding-bottom: 4rem;
-  background-image: url(${overlayIllustration});
-  background-size: contain;
-  background-position: right top;
-  background-repeat: no-repeat;
-`
+import { Container } from 'components/common/Container'
 
-export const IntroWrapper = styled.div`
+import dev from './assets/dev.svg'
+
+const Wrapper = styled.div`
   padding: 4rem 0;
   display: flex;
   align-items: center;
@@ -20,7 +16,7 @@ export const IntroWrapper = styled.div`
   }
 `
 
-export const Details = styled.div`
+const Details = styled.div`
   flex: 1;
 
   @media (max-width: 960px) {
@@ -60,7 +56,7 @@ export const Details = styled.div`
   }
 `
 
-export const Thumbnail = styled.div`
+const Thumbnail = styled.div`
   flex: 1;
 
   @media (max-width: 960px) {
@@ -71,3 +67,16 @@ export const Thumbnail = styled.div`
     width: 100%;
   }
 `
+
+type Props = {
+  alt?: string
+}
+
+export const DevMessage: React.FC<Props> = ({ children, alt }) => (
+  <Wrapper as={Container}>
+    <Details>{children}</Details>
+    <Thumbnail>
+      <img src={dev} alt={alt} />
+    </Thumbnail>
+  </Wrapper>
+)

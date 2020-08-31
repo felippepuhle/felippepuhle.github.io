@@ -1,3 +1,4 @@
+export { DevMessage } from './DevMessage/DevMessage'
 export { Layout } from './Layout/Layout'
 export { SEO } from './SEO/SEO'
 
