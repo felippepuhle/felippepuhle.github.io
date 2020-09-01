@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-  max-width: 1280px;
+export const Container = styled.div<{ maxWidth?: number }>`
+  max-width: ${({ maxWidth }) => maxWidth || 1280}px;
   margin: 0 auto;
   width: 90%;
 
