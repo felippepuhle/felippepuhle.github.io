@@ -2,22 +2,28 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { Container } from 'components/common'
-import { GitHub, LinkedIn, Twitter } from 'components/common/Icons'
+import { GitHub, LinkedIn, Medium, Twitter } from 'components/common/Icons'
 
 import footerIllustration from './assets/footer.svg'
 
 const SOCIAL = [
   {
-    id: 1,
+    id: 0,
     name: 'Github',
     link: 'https://github.com/felippepuhle',
     icon: <GitHub />,
   },
   {
-    id: 2,
-    name: 'Twitter',
+    id: 1,
+    name: 'LinkedIn',
     link: 'https://linkedin.com/in/felippepuhle',
     icon: <Twitter />,
+  },
+  {
+    id: 2,
+    name: 'Medium',
+    link: 'https://medium.com/@felippepuhle',
+    icon: <Medium />,
   },
   {
     id: 3,
@@ -80,17 +86,12 @@ const Links = styled.div`
   align-items: center;
 
   a {
-    margin: 0 0.5rem;
+    margin: 0 0.25rem;
     color: ${({ theme }) => theme.colors.main};
     transition: 0.2s opacity;
 
     :hover {
       opacity: 0.9;
-    }
-
-    &:first-child,
-    &:last-child {
-      margin: 0;
     }
   }
 `

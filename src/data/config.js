@@ -10,6 +10,7 @@ module.exports = {
     twitter: 'http://www.twitter.com/felippepuhle',
     github: 'https://github.com/felippepuhle',
     linkedin: 'https://www.linkedin.com/in/felippepuhle',
+    medium: 'https://medium.com/@felippepuhle',
   },
   themeColor: '#6b63ff',
   backgroundColor: '#6b63ff',
