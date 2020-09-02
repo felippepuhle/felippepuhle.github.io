@@ -2,7 +2,15 @@ import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 
 import { SEO } from 'components/common'
-import { Education, History, Intro, Links, Profile } from 'components/resume'
+import {
+  Education,
+  History,
+  Intro,
+  Languages,
+  Links,
+  Profile,
+  Skills,
+} from 'components/resume'
 import { defaultTitle } from 'data/config'
 
 const GlobalStyles = createGlobalStyle`
@@ -22,6 +30,9 @@ const GlobalStyles = createGlobalStyle`
     :first-of-type {
       padding-top: 4rem;
     }
+    :last-of-type {
+      padding-bottom: 4rem;
+    }
   }
 
   h2,
@@ -37,17 +48,18 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
   }
 
-  p {
+  p, a {
     font-size: 14px;
-    color: #444444;
     line-height: 24px;
+  }
+  p {
+    color: #444444;
     margin: 0 0 1.2rem;
 
     :last-of-type {
       margin-bottom: 0;
     }
   }
-
   a {
     color: #6e6e6e;
   }
@@ -79,5 +91,7 @@ export default () => (
     <History />
     <Education />
     <Links />
+    <Skills />
+    <Languages />
   </>
 )
