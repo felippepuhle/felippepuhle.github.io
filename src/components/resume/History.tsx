@@ -40,14 +40,13 @@ const HISTORY = [
     title: 'Software Engineer, Entria',
     period: {
       start: 'June 2017',
-      end: 'July 2018',
+      end: 'April 2018',
     },
     workedOn: [
       'Worked as a senior developer that brought up creative solutions to solve complex problems.',
       'Joined challenging projects of many respected companies like Gol, Natura and Feedback House.',
       'Played both front-end and back-end roles, working mainly with React and React Native applications served by a Node.js GraphQL server.',
       'Had a lot of fun coding React Native animations.',
-      'ReactJS, React Native, Relay, GraphQL, Redux, Flow, Typescript, MongoDB, MySQL, Postgres.',
     ],
     technologies:
       'ReactJS, React Native, Relay, GraphQL, Redux, Flow, Typescript, MongoDB, MySQL, Postgres.',
