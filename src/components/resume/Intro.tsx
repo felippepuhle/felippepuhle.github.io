@@ -124,7 +124,7 @@ export const Intro = () => {
               <BottomIcon>
                 <Email width={16} height={16} color='#ccc' />
               </BottomIcon>
-              <BottomText as='a' href='mailto:felippe.puhle.gmail.com'>
+              <BottomText as='a' href='mailto:felippe.puhle@gmail.com'>
                 felippe.puhle@gmail.com
               </BottomText>
             </BottomItem>

@@ -54,7 +54,7 @@ const GlobalStyles = createGlobalStyle`
 
   @media print {
     @page {
-      size: auto;
+      size: Legal;
       margin-left: 0;
       margin-right: 0;
     }
