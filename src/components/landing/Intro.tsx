@@ -19,8 +19,8 @@ export const Intro = () => (
     <Header />
 
     <DevMessage alt={TEXT}>
-      <h1>Hi there!</h1>
-      <h4>{TEXT}</h4>
+      <DevMessage.Title>Hi there!</DevMessage.Title>
+      <DevMessage.Message>{TEXT}</DevMessage.Message>
       <Button as={AnchorLink} href='#contact'>
         Hire me
       </Button>

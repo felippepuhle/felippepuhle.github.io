@@ -28,37 +28,6 @@ const Details = styled.div`
     width: 100%;
     margin-bottom: 2rem;
   }
-
-  h1 {
-    margin-bottom: 2rem;
-    font-size: 36pt;
-    color: ${({ theme }) => (theme.isDarkMode ? '#fff' : '#212121')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) =>
-        theme.isDarkMode ? 'difference' : 'unset'};
-    }
-
-    @media (max-width: 680px) {
-      font-size: 30pt;
-    }
-  }
-
-  h4 {
-    margin-bottom: 2.5rem;
-    font-size: 32pt;
-    font-weight: normal;
-    color: ${({ theme }) => (theme.isDarkMode ? '#e6e6e6' : '#707070')};
-
-    @media (max-width: 960px) {
-      mix-blend-mode: ${({ theme }) =>
-        theme.isDarkMode ? 'difference' : 'unset'};
-    }
-
-    @media (max-width: 680px) {
-      font-size: 26pt;
-    }
-  }
 `
 
 const Thumbnail = styled.div`
@@ -73,11 +42,50 @@ const Thumbnail = styled.div`
   }
 `
 
+const Title = styled.h1`
+  margin-bottom: 2rem;
+  font-size: 36pt;
+  color: ${({ theme }) => (theme.isDarkMode ? '#fff' : '#212121')};
+
+  @media (max-width: 960px) {
+    mix-blend-mode: ${({ theme }) =>
+      theme.isDarkMode ? 'difference' : 'unset'};
+  }
+
+  @media (max-width: 680px) {
+    font-size: 30pt;
+  }
+`
+
+const Message = styled.h4`
+  margin-bottom: 2.5rem;
+  font-size: 32pt;
+  font-weight: normal;
+  color: ${({ theme }) => (theme.isDarkMode ? '#e6e6e6' : '#707070')};
+
+  @media (max-width: 960px) {
+    mix-blend-mode: ${({ theme }) =>
+      theme.isDarkMode ? 'difference' : 'unset'};
+  }
+
+  @media (max-width: 680px) {
+    font-size: 26pt;
+  }
+`
+
+type StaticProps = {
+  Title: typeof Title
+  Message: typeof Message
+}
+
 type Props = {
   alt?: string
 }
 
-export const DevMessage: React.FC<Props> = ({ children, alt }) => (
+export const DevMessage: StaticProps & React.FC<Props> = ({
+  children,
+  alt,
+}) => (
   <Wrapper as={Container}>
     <Details>{children}</Details>
     <Thumbnail>
@@ -85,3 +93,6 @@ export const DevMessage: React.FC<Props> = ({ children, alt }) => (
     </Thumbnail>
   </Wrapper>
 )
+
+DevMessage.Title = Title
+DevMessage.Message = Message

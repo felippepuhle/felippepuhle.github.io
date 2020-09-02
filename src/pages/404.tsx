@@ -21,8 +21,8 @@ export default () => (
 
     <Inner>
       <DevMessage alt={TEXT}>
-        <h1>Not found!</h1>
-        <h4>{TEXT}</h4>
+        <DevMessage.Title>Not found!</DevMessage.Title>
+        <DevMessage.Message>{TEXT}</DevMessage.Message>
         <Button as={Link} to='/'>
           Go back
         </Button>
