@@ -50,7 +50,7 @@ const GlobalStyles = createGlobalStyle`
 
   p, a {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 25px;
   }
   p {
     color: #444444;
