@@ -6,14 +6,14 @@ import Thumbnail from './assets/thumbnail.png'
 import {
   url,
   defaultDescription,
-  social,
   defaultTitle,
-  socialLinks,
   address,
   contact,
   legalName,
   logo,
 } from 'data/config'
+import social from 'data/social'
+const twitter = social.find(({ name }) => name === 'Twitter')
 
 type Props = {
   title?: string
@@ -49,11 +49,7 @@ export const SEO: React.FC<Props> = ({
 			"addressCountry": "${address.country}",
 			"postalCode": "${address.zipCode}"
 		},
-		"sameAs": [
-			"${socialLinks.twitter}",
-			"${socialLinks.linkedin}",
-			"${socialLinks.github}"
-		]
+		"sameAs": [${social.map(({ link }) => `"${link}"`).join(', ')}]
   	}`
 
   return (
@@ -68,8 +64,8 @@ export const SEO: React.FC<Props> = ({
       <meta property='og:image' content={Thumbnail} />
 
       <meta name='twitter:card' content='summary' />
-      <meta name='twitter:creator' content={socialLinks.twitter} />
-      <meta name='twitter:site' content={social.twitter} />
+      <meta name='twitter:creator' content={twitter.link} />
+      <meta name='twitter:site' content={twitter.link} />
       <meta name='twitter:title' content={title} />
       <meta name='twitter:description' content={description} />
       <meta name='twitter:image:src' content={Thumbnail} />

@@ -1,4 +1,5 @@
 export { Education } from './Education'
 export { History } from './History'
 export { Intro } from './Intro'
+export { Links } from './Links'
 export { Profile } from './Profile'

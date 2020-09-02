@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import { Container } from 'components/common'
 
+import { CONTAINER_SIZE } from './constants'
 import { PeriodDescriptionRow } from './PeriodDescriptionRow'
 
 const HISTORY = [
@@ -81,7 +82,7 @@ const HISTORY = [
 
 export const History = () => (
   <section>
-    <Container maxWidth={625}>
+    <Container maxWidth={CONTAINER_SIZE}>
       <h2>Employment History</h2>
 
       {HISTORY.map((row) => (

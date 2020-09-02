@@ -3,35 +3,16 @@ import styled from 'styled-components'
 
 import { Container } from 'components/common'
 import { GitHub, LinkedIn, Medium, Twitter } from 'components/common/Icons'
+import social from 'data/social'
 
 import footerIllustration from './assets/footer.svg'
 
-const SOCIAL = [
-  {
-    id: 0,
-    name: 'Github',
-    link: 'https://github.com/felippepuhle',
-    icon: <GitHub />,
-  },
-  {
-    id: 1,
-    name: 'LinkedIn',
-    link: 'https://linkedin.com/in/felippepuhle',
-    icon: <Twitter />,
-  },
-  {
-    id: 2,
-    name: 'Medium',
-    link: 'https://medium.com/@felippepuhle',
-    icon: <Medium />,
-  },
-  {
-    id: 3,
-    name: 'Twitter',
-    link: 'https://twitter.com/felippepuhle',
-    icon: <LinkedIn />,
-  },
-]
+const ICONS = {
+  github: <GitHub />,
+  linkedin: <LinkedIn />,
+  medium: <Medium />,
+  twitter: <Twitter />,
+}
 
 const Wrapper = styled.div`
   padding: 20rem 0 4rem 0;
@@ -116,15 +97,15 @@ export const Footer = () => (
         </span>
       </Details>
       <Links>
-        {SOCIAL.map(({ id, name, link, icon }) => (
+        {social.map(({ name, link }) => (
           <a
-            key={id}
+            key={name}
             href={link}
             target='_blank'
             rel='noopener noreferrer'
             aria-label={`follow me on ${name}`}
           >
-            {icon}
+            {ICONS[name.toLowerCase()]}
           </a>
         ))}
       </Links>

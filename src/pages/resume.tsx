@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 
 import { SEO } from 'components/common'
-import { Education, History, Intro, Profile } from 'components/resume'
+import { Education, History, Intro, Links, Profile } from 'components/resume'
 import { defaultTitle } from 'data/config'
 
 const GlobalStyles = createGlobalStyle`
@@ -14,10 +14,6 @@ const GlobalStyles = createGlobalStyle`
 
   * {
     box-sizing: border-box;
-  }
-
-  a {
-    text-decoration: none;
   }
 
   section {
@@ -52,6 +48,10 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
+  a {
+    color: #6e6e6e;
+  }
+
   @media print {
     @page {
       size: Legal;
@@ -78,5 +78,6 @@ export default () => (
     <Profile />
     <History />
     <Education />
+    <Links />
   </>
 )

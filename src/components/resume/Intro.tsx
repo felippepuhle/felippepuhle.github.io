@@ -7,6 +7,8 @@ import { Container } from 'components/common'
 import { Email, Marker, Phone } from 'components/common/Icons'
 import { defaultTitle, defaultDescription } from 'data/config'
 
+import { CONTAINER_SIZE } from './constants'
+
 const Wrapper = styled.div`
   background: #303030;
 
@@ -105,7 +107,7 @@ export const Intro = () => {
   return (
     <Wrapper>
       <Top>
-        <Container maxWidth={625}>
+        <Container maxWidth={CONTAINER_SIZE}>
           <TopContent>
             <Avatar>
               <Img fixed={data.file.childImageSharp.fixed} />

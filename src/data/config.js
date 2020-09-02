@@ -6,17 +6,8 @@ module.exports = {
   legalName: 'Felippe Rodrigo Puhle',
   defaultDescription:
     'Software Engineer | React and React Native developer | GraphQL enthusiast',
-  socialLinks: {
-    twitter: 'http://www.twitter.com/felippepuhle',
-    github: 'https://github.com/felippepuhle',
-    linkedin: 'https://www.linkedin.com/in/felippepuhle',
-    medium: 'https://medium.com/@felippepuhle',
-  },
   themeColor: '#6b63ff',
   backgroundColor: '#6b63ff',
-  social: {
-    twitter: '@felippepuhle',
-  },
   address: {
     city: 'São José do Cedro',
     region: 'Santa Catarina',

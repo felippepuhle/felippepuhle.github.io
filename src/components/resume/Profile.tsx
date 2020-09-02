@@ -2,9 +2,11 @@ import React from 'react'
 
 import { Container } from 'components/common'
 
+import { CONTAINER_SIZE } from './constants'
+
 export const Profile = () => (
   <section>
-    <Container maxWidth={625}>
+    <Container maxWidth={CONTAINER_SIZE}>
       <h2>Profile</h2>
 
       <p>

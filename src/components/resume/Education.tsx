@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import { Container } from 'components/common'
 
+import { CONTAINER_SIZE } from './constants'
 import { PeriodDescriptionRow } from './PeriodDescriptionRow'
 
 const EDUCATION = [
@@ -17,7 +18,7 @@ const EDUCATION = [
 
 export const Education = () => (
   <section>
-    <Container maxWidth={625}>
+    <Container maxWidth={CONTAINER_SIZE}>
       <h2>Education</h2>
 
       {EDUCATION.map((row) => (
