@@ -3,15 +3,7 @@ import styled from 'styled-components'
 
 import { Container } from 'components/common'
 
-const Row = styled.div`
-  padding: 0.5rem 0 1rem;
-`
-
-const Period = styled.div`
-  margin: 0.5rem 0;
-  font-size: 0.8rem;
-  color: #777;
-`
+import { PeriodDescriptionRow } from './PeriodDescriptionRow'
 
 const HISTORY = [
   {
@@ -93,11 +85,11 @@ export const History = () => (
       <h2>Employment History</h2>
 
       {HISTORY.map((row) => (
-        <Row key={row.title}>
-          <h3>{row.title}</h3>
-          <Period>
-            {row.period.start} - {row.period.end}
-          </Period>
+        <PeriodDescriptionRow
+          key={row.title}
+          title={row.title}
+          period={row.period}
+        >
           <p>
             {row.workedOn.map((workedOnRow, index) => (
               <span key={workedOnRow}>
@@ -106,7 +98,7 @@ export const History = () => (
             ))}
           </p>
           <p>Key technologies: {row.technologies}</p>
-        </Row>
+        </PeriodDescriptionRow>
       ))}
     </Container>
   </section>

@@ -1,8 +1,8 @@
 import React from 'react'
 import styled, { createGlobalStyle } from 'styled-components'
 
-import { Layout, SEO } from 'components/common'
-import { History, Intro, Profile } from 'components/resume'
+import { SEO } from 'components/common'
+import { Education, History, Intro, Profile } from 'components/resume'
 import { defaultTitle } from 'data/config'
 
 const GlobalStyles = createGlobalStyle`
@@ -77,5 +77,6 @@ export default () => (
     <Intro />
     <Profile />
     <History />
+    <Education />
   </>
 )
