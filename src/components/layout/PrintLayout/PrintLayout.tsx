@@ -1,15 +1,10 @@
 import React from 'react'
 
-import { Footer } from 'components/theme'
-
 import { GlobalStyles } from './GlobalStyles'
 
-import './fonts.css'
-
-export const Layout = ({ children }) => (
+export const PrintLayout = ({ children }) => (
   <>
     <GlobalStyles />
     {children}
-    <Footer />
   </>
 )

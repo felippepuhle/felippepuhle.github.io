@@ -2,7 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-import { Button, DevMessage, Layout, SEO } from 'components/common'
+import { Button, DevMessage, SEO } from 'components/common'
+import { DefaultLayout } from 'components/layout'
 import { TopRightOverlay } from 'components/common/Overlays'
 
 const Inner = styled(TopRightOverlay)`
@@ -16,7 +17,7 @@ const Inner = styled(TopRightOverlay)`
 const TEXT = 'You just hit a route that doesn’t exist... the sadness.'
 
 export default () => (
-  <Layout>
+  <DefaultLayout>
     <SEO title='404: Not found' location='/404' />
 
     <Inner>
@@ -28,5 +29,5 @@ export default () => (
         </Button>
       </DevMessage>
     </Inner>
-  </Layout>
+  </DefaultLayout>
 )
