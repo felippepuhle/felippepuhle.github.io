@@ -8,6 +8,16 @@ import { PeriodDescriptionRow } from './PeriodDescriptionRow'
 
 const HISTORY = [
   {
+    title: 'Software Engineer, G2i',
+    period: {
+      start: 'September 2020',
+      end: 'current',
+    },
+    workedOn: [],
+    technologies:
+      'ReactJS, React Native, Redux, GraphQL, Apollo Client, Typescript.',
+  },
+  {
     title: 'Software Engineer, HelloMD',
     period: {
       start: 'July 2018',
