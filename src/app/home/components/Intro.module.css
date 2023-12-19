@@ -1,0 +1,31 @@
+.container {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 65px;
+  font-weight: 600;
+}
+
+.subtitle {
+  padding-top: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.subtitle :global(.typed-cursor) {
+  font-weight: 200;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.color {
+  color: var(--main);
+}
+
+@media screen and (max-width: 414px) {
+  .title {
+    font-size: 50px;
+  }
+}

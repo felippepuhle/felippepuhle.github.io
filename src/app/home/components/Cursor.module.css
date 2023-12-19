@@ -1,0 +1,22 @@
+.container {
+  position: fixed;
+  z-index: 10;
+}
+
+.cursor {
+  transition: all 0.4s ease;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid #ffffff;
+  opacity: 0;
+}
+
+.ready {
+  opacity: 0.5;
+}
+
+.interacting {
+  opacity: 0.6;
+  transform: scale(1.5);
+}

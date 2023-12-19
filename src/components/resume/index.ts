@@ -1,7 +1,0 @@
-export { Education } from './Education'
-export { History } from './History'
-export { Intro } from './Intro'
-export { Languages } from './Languages'
-export { Links } from './Links'
-export { Profile } from './Profile'
-export { Skills } from './Skills'
