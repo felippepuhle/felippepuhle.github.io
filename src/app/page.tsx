@@ -6,15 +6,15 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.container}>
       <ParticlesBackground />
       <Cursor />
-      <div className={styles.container}>
+      <div className={styles.content}>
         <SocialMedias />
         <main className={styles.main}>
           <Intro />
         </main>
       </div>
-    </>
+    </div>
   );
 }

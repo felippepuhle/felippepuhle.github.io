@@ -1,41 +1,24 @@
 import Image from "next/image";
 
-import styles from "./SocialMedias.module.css";
+import { SOCIAL } from "@/constants";
 
-const LINKS = [
-  {
-    href: "https://github.com/felippepuhle",
-    icon: "/icons/github.png",
-  },
-  {
-    href: "https://twitter.com/felippepuhle",
-    icon: "/icons/twitter.png",
-  },
-  {
-    href: "https://linkedin.com/in/felippepuhle",
-    icon: "/icons/linkedin.png",
-  },
-  {
-    href: "https://medium.com/@felippepuhle",
-    icon: "/icons/medium.png",
-  },
-];
+import styles from "./SocialMedias.module.css";
 
 export default function SocialMedias() {
   return (
     <div className={styles.container}>
-      {LINKS.map((link) => (
+      {SOCIAL.map((social) => (
         <a
-          href={link.href}
+          href={social.href}
           target="_blank"
           className={styles.link}
-          key={link.href}
+          key={social.href}
         >
           <Image
             width={21}
             height={21}
-            src={link.icon}
-            alt={link.icon}
+            src={social.icon}
+            alt={social.label}
             quality={100}
           />
         </a>

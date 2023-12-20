@@ -1,0 +1,19 @@
+@media print {
+  @page {
+    size: Legal;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @page :first {
+    margin-top: 0;
+  }
+
+  body {
+    print-color-adjust: exact;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+}

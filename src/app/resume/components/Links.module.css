@@ -1,0 +1,26 @@
+.content {
+  display: flex;
+}
+
+.link {
+  margin: 10px 20px 0 0;
+  font-size: 14px;
+  text-decoration: underline;
+  color: #777;
+}
+
+@media (max-width: 767px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .link {
+    margin: 10px 0;
+  }
+}
+
+@media print {
+  .container {
+    display: none;
+  }
+}

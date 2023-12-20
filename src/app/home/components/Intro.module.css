@@ -21,7 +21,7 @@
 }
 
 .color {
-  color: var(--main);
+  color: var(--colors-main);
 }
 
 @media screen and (max-width: 414px) {
