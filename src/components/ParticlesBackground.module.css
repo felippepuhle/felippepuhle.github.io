@@ -12,3 +12,9 @@
 .ready {
   opacity: 1;
 }
+
+@media print {
+  .container {
+    display: none;
+  }
+}

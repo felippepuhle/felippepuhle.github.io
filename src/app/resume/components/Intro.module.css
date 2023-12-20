@@ -4,6 +4,8 @@
 }
 
 .header {
+  position: relative;
+  z-index: 2;
   padding: 27px 0 22px;
   text-align: center;
 }
@@ -33,6 +35,8 @@
 }
 
 .footer {
+  position: relative;
+  z-index: 2;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding: 15px 0px;
