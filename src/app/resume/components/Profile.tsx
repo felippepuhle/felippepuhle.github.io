@@ -4,17 +4,15 @@ export default function Profile() {
       <h2>Profile</h2>
 
       <p>
-        I&apos;m a Software Engineer with industry experience building web an
-        mobile apps using ReactJS, React Native, and GraphQL.
+        I&apos;m a Software Engineer with industry experience building web and
+        mobile apps using ReactJS, React Native, and GraphQL. Former head of
+        engineering at a Silicon Valley-based startup which raised $9M from top
+        investors.
       </p>
       <p>
-        I love to develop software with clean code, and I&apos;m fascinated with
-        learning as many things as I can. I also love helping others to learn in
-        the same way.
-      </p>
-      <p>
-        I consider myself a communicative person, always doing my best to make
-        things happen.
+        Passionate about crafting clean code and continual learning, I&apos;m
+        all about diving deep into it and helping others grow while we build
+        amazing things together.
       </p>
     </section>
   );

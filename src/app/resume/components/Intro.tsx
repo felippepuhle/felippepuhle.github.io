@@ -24,10 +24,7 @@ export default function Intro() {
             Felippe Rodrigo Puhle
           </h1>
 
-          <span className={styles.text}>
-            SOFTWARE ENGINEER | REACT AND REACT NATIVE DEVELOPER | GRAPHQL
-            ENTHUSIAST
-          </span>
+          <span className={styles.text}>SOFTWARE ENGINEER | FULL-STACK</span>
         </div>
       </div>
       <div className={styles.footer}>

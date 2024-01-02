@@ -6,7 +6,7 @@
 .header {
   position: relative;
   z-index: 2;
-  padding: 27px 0 22px;
+  padding: 20px 0;
   text-align: center;
 }
 .headerContent {
@@ -21,7 +21,7 @@
 }
 
 .name {
-  margin: 10px 0 0;
+  margin: 5px 0 0;
   font-size: 26px;
   letter-spacing: -0.1px;
   opacity: 0.95;
@@ -39,7 +39,7 @@
   z-index: 2;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 15px 0px;
+  padding: 10px 0px;
 }
 .footerContent {
   display: flex;

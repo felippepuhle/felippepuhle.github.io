@@ -1,4 +1,5 @@
 import SimpleTable from "./common/SimpleTable";
+import styles from "./Skills.module.css";
 
 const SKILLS = [
   "ReactJS",
@@ -11,7 +12,7 @@ const SKILLS = [
 
 export default function Skills() {
   return (
-    <section>
+    <section className={styles.container}>
       <h2>Skills</h2>
 
       <SimpleTable list={SKILLS} />

@@ -14,6 +14,8 @@
   max-width: var(--content-size);
   padding: 0 var(--content-padding);
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
 .content section {
@@ -26,9 +28,13 @@
   margin-bottom: 5px;
   font-size: 20px;
 }
-.content section h3 {
+.content section h3,
+.content section h4 {
   margin-bottom: 5px;
   font-size: 14px;
+}
+.content section h4 {
+  font-weight: 400;
 }
 .content section p {
   font-size: 14px;
@@ -36,4 +42,14 @@
 }
 .content section p:not(:last-child) {
   margin-bottom: 15px;
+}
+
+@media print {
+  .container {
+    --section-padding: 30px;
+  }
+
+  .content section p:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
