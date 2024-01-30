@@ -1,6 +1,6 @@
 import SimpleTable from "./common/SimpleTable";
 
-const LANGUAGES = ["Portuguese", "English\n(fluent written and verbal)"];
+const LANGUAGES = ["English\n(fluent written and verbal)", "Portuguese"];
 
 export default function Languages() {
   return (

@@ -9,7 +9,7 @@
 }
 
 @media print {
-  .container:not(:last-child) {
-    margin-bottom: 20px;
+  .hideOnPrint {
+    display: none;
   }
 }
